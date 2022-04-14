@@ -37,6 +37,8 @@ Reference: https://sumofpwn.nl/advisory/2016/persistent_cross_site_scripting_vul
     -  1. Confirm WordPress target host is vulnerable. Reflex Gallery plugin version older than 3.1.4 must be installed and activated.
       -  1a. Upload image into Reflex gallery plugin.
     -  2. Add Reflex gallery shortcode into post. 
+    -  ![WP_reflex_gallery_pages](https://user-images.githubusercontent.com/98624766/163492792-0498b52d-a217-4414-9fbb-126535e69990.png)
+
     -  3. Run metasploit from attacker machine using the following commands:
         - sudo service postgresql start
         - sudo msfdb init
@@ -51,22 +53,27 @@ Reference: https://sumofpwn.nl/advisory/2016/persistent_cross_site_scripting_vul
         - exploit
     -  4. Meterpreter shell running, run the following commands to start a new shell inside the target machine:
         - shell
-        
+  
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
   - References:
   - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-4133
   - Reflex Plugin 3.1.3 zip: [reflex-gallery.3.1.3.zip](https://github.com/peelingwave/cis221_codepath/files/8492582/reflex-gallery.3.1.3.zip)
 
-### 3. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
+### 3. WordPress Olimometer 2.56 SQL Injection
+  - [ ] Summary: WordPress Olimometer plugin versions 2.56 and below suffer from a remote SQL injection vulnerability.
+    - Vulnerability types:SQLI
+    - Tested in version: WP 4.2, Olimometer 2.56
+    - Fixed in version: Olimometer 2.57
   - [ ] GIF Walkthrough: 
   - [ ] Steps to recreate: 
+    1. Install Olimometer 2.56 or older onto target machine. [olimometer.2.56.zip](https://github.com/peelingwave/cis221_codepath/files/8492878/olimometer.2.56.zip)
+
+    2. 
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+
+
 ### 4. (Optional) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
