@@ -51,7 +51,8 @@ Reference: https://sumofpwn.nl/advisory/2016/persistent_cross_site_scripting_vul
         
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-
+  - References:
+  - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-4133
 
 ### 3. (Required) Vulnerability Name or ID
   - [ ] Summary: 
