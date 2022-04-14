@@ -21,9 +21,11 @@ Time spent: **15** hours spent in total
     -  2. Create an image file and insert '<img src=a onerror=alert(document.cookie)>' into the filename. This is the paylod script that will cause a javascript alert. For example, I used "marvinc0d3p4th<img src=a onerror=alert(document.cookie)>.jpg"
     -  3. Use social engineering to have admin of target host to upload image file as an attachment page. Even better is if you can get the admin to use the created attachment page url to embed into a post. 
 <img src="https://github.com/peelingwave/cis221_codepath/blob/Week-7%268-Project-Wordpress-Vs.-Kali/Pentest1-WP4.2-XSS_ImageUpload_exploit-marvin_codepath.png">
-  - [ ] Affected source code: 
-    - [Link 1](https://github.com/WordPress/WordPress/commit/c9e60dab176635d4bfaaf431c0ea891e4726d6e0)
-  - Reference: https://sumofpwn.nl/advisory/2016/persistent_cross_site_scripting_vulnerability_in_wordpress_due_to_unsafe_processing_of_file_names.html
+  - [ ] Affected source code: (https://github.com/WordPress/WordPress/commit/c9e60dab176635d4bfaaf431c0ea891e4726d6e0)
+  
+Reference: https://sumofpwn.nl/advisory/2016/persistent_cross_site_scripting_vulnerability_in_wordpress_due_to_unsafe_processing_of_file_names.html
+
+
 ### 2. CVE-2015-4133 -- WordPress Plugin Reflex Gallery - Arbitrary File Upload (Metasploit) 
   - [ ] Summary: This module exploits an arbitrary PHP code upload in the WordPress Reflex Gallery version 3.1.3. The vulnerability allows for arbitrary file upload and remote code execution. 
     - Vulnerability types: Arbitrary file upload, remote code execution.
