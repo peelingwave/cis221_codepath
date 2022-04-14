@@ -15,7 +15,7 @@ Time spent: **15** hours spent in total
     - Vulnerability types: Cross-site scripting
     - Tested in version: WordPress 4.2
     - Fixed in version: WordPress 4.6.1
-  - [ ] GIF Walkthrough: 
+  - [ ] GIF Walkthrough: <img src="" alt="Virtualbox Installation" style="max-width: 100%;">
   - [ ] Steps to recreate: 
   - [ ]   1. Confirm WordPress target is vulnerable by checking that WP version is 2.5-4.6.
   - [ ]   2. create image file and insert '<img src=a onerror=alert(document.cookie)>' into the filename. For example, I used 'marvinc0d3p4th<img src=a onerror=alert(document.cookie)>.jpg'
