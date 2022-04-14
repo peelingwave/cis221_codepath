@@ -17,12 +17,12 @@ Time spent: **15** hours spent in total
     - Fixed in version: WordPress 4.6.1
   - [ ] GIF Walkthrough: <img src="https://github.com/peelingwave/cis221_codepath/blob/Week-7%268-Project-Wordpress-Vs.-Kali/Pentest1-WP4.2-XSS_ImageUpload_exploit-marvin_codepath.gif" alt="Walkthrough" style="max-width: 100%;">
   - [ ] Steps to recreate: 
-  - [ ]   1. Confirm WordPress target is vulnerable by checking that WP version is 2.5-4.6.
-  - [ ]   2. create image file and insert '<img src=a onerror=alert(document.cookie)>' into the filename. For example, I used 'marvinc0d3p4th<img src=a onerror=alert(document.cookie)>.jpg'
-  - [ ]   3. Use social engineering to have admin upload image file as an attachment file. Even better is if you can get the admin to use the created attachment file url to embed into a post. 
-  - [ ]   
+    -  1. Confirm WordPress target host is vulnerable. WP version must be 2.5-4.6.
+    -  2. Create an image file and insert '<img src=a onerror=alert(document.cookie)>' into the filename. This is the paylod script that will cause a javascript alert. For example, I used "marvinc0d3p4th<img src=a onerror=alert(document.cookie)>.jpg"
+    -  3. Use social engineering to have admin of target host to upload image file as an attachment page. Even better is if you can get the admin to use the created attachment page url to embed into a post. 
+<img src="https://github.com/peelingwave/cis221_codepath/blob/Week-7%268-Project-Wordpress-Vs.-Kali/Pentest1-WP4.2-XSS_ImageUpload_exploit-marvin_codepath.png">
   - [ ] Affected source code: attachment_id=x
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+
 ### 2. (Required) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
