@@ -18,7 +18,7 @@ Time spent: **15** hours spent in total
   - [ ] GIF Walkthrough: 
   - [ ] Steps to recreate: 
   - [ ]   1. Confirm WordPress target is vulnerable by checking that WP version is 2.5-4.6.
-  - [ ]   2. create image file and insert <img src=a onerror=alert(document.cookie)> into the filename. For example, I used marvinc0d3p4th<img src=a onerror=alert(document.cookie)>.jpg
+  - [ ]   2. create image file and insert '<img src=a onerror=alert(document.cookie)>' into the filename. For example, I used 'marvinc0d3p4th<img src=a onerror=alert(document.cookie)>.jpg'
   - [ ]   3. Use social engineering to have admin upload image file as an attachment file. Even better is if you can get the admin to use the created attachment file url to embed into a post. 
   - [ ]   
   - [ ] Affected source code: attachment_id=x
