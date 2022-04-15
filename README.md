@@ -20,7 +20,7 @@ Time spent: **25** hours spent in total
     1. Confirm WordPress target host is vulnerable. WP version must be 2.5-4.6.
     2. Create an image file and insert '<img src=a onerror=alert(document.cookie)>' into the filename. This is the paylod script that will cause a javascript alert. For example, I used "marvinc0d3p4th<img src=a onerror=alert(document.cookie)>.jpg"
     3. Use social engineering to have admin of target host to upload image file as an attachment page. Even better is if you can get the admin to use the created attachment page url to embed into a post. 
-<img src="https://github.com/peelingwave/cis221_codepath/blob/Week-7%268-Project-Wordpress-Vs.-Kali/Pentest1-WP4.2-XSS_ImageUpload_exploit-marvin_codepath.png">
+    <img src="https://github.com/peelingwave/cis221_codepath/blob/Week-7%268-Project-Wordpress-Vs.-Kali/Pentest1-WP4.2-XSS_ImageUpload_exploit-marvin_codepath.png">
   - [ ] Affected source code: (https://github.com/WordPress/WordPress/commit/c9e60dab176635d4bfaaf431c0ea891e4726d6e0)
   
 Reference: https://sumofpwn.nl/advisory/2016/persistent_cross_site_scripting_vulnerability_in_wordpress_due_to_unsafe_processing_of_file_names.html
@@ -68,7 +68,8 @@ Reference: https://sumofpwn.nl/advisory/2016/persistent_cross_site_scripting_vul
   - [ ] Steps to recreate: 
     1. Ensure WP 4.2 and install Olimometer 2.56 or older onto target machine and activate the plugin. [olimometer.2.56.zip](https://github.com/peelingwave/cis221_codepath/files/8492878/olimometer.2.56.zip)
 
-    2. In Olimometer plugin settings, retrieve short code and insert into post. ![olimometer_shortcode](https://user-images.githubusercontent.com/98624766/163495767-e013ea2b-952a-477a-87d1-d1059913cd6d.png)
+    2. In Olimometer plugin settings, retrieve short code and insert into post. 
+    ![olimometer_shortcode](https://user-images.githubusercontent.com/98624766/163495767-e013ea2b-952a-477a-87d1-d1059913cd6d.png)
 
     3. In attacker machine run sqlmap command:
        - sqlmap -u http://path.to.target.machine/wp-content/plugins/olimometer/thermometer.php?olimometer_id=1 --dbs --threads=5 --random-agent --no-cast
@@ -96,14 +97,12 @@ Reference: https://sumofpwn.nl/advisory/2016/persistent_cross_site_scripting_vul
 
 ## Assets
 
-List any additional assets, such as scripts or files
 
 ## Resources
 
 - [WordPress Source Browser](https://core.trac.wordpress.org/browser/)
 - [WordPress Developer Reference](https://developer.wordpress.org/reference/)
 
-GIFs created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
