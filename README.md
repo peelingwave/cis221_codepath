@@ -36,7 +36,7 @@ Reference: https://sumofpwn.nl/advisory/2016/persistent_cross_site_scripting_vul
   - [ ] Steps to recreate: 
     -  1. Confirm WordPress target host is vulnerable. Reflex Gallery plugin version older than 3.1.4 must be installed and activated.
       -  1a. Upload image into Reflex gallery plugin.
-    -  2. Add Reflex gallery shortcode into post. 
+    -  2. In Reflex gallery settings retrieve the short code and insert it into post. 
     -  ![WP_reflex_gallery_pages](https://user-images.githubusercontent.com/98624766/163492792-0498b52d-a217-4414-9fbb-126535e69990.png)
 
     -  3. Run metasploit from attacker machine using the following commands:
@@ -62,18 +62,24 @@ Reference: https://sumofpwn.nl/advisory/2016/persistent_cross_site_scripting_vul
 
 ### 3. WordPress Olimometer 2.56 SQL Injection
   - [ ] Summary: WordPress Olimometer plugin versions 2.56 and below suffer from a remote SQL injection vulnerability.
-    - Vulnerability types:SQLI
+    - Vulnerability types: SQLI
     - Tested in version: WP 4.2, Olimometer 2.56
     - Fixed in version: Olimometer 2.57
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-    1. Install Olimometer 2.56 or older onto target machine. [olimometer.2.56.zip](https://github.com/peelingwave/cis221_codepath/files/8492878/olimometer.2.56.zip)
+  - [ ] GIF Walkthrough: ![sqlmap-olimometer](https://user-images.githubusercontent.com/98624766/163496922-57763920-7a90-4562-be8e-2e5273c1307d.gif)
 
-    2. 
+  - [ ] Steps to recreate: 
+    1. Ensure WP 4.2 and install Olimometer 2.56 or older onto target machine and activate the plugin. [olimometer.2.56.zip](https://github.com/peelingwave/cis221_codepath/files/8492878/olimometer.2.56.zip)
+
+    2. In Olimometer plugin settings, retrieve short code and insert into post. ![olimometer_shortcode](https://user-images.githubusercontent.com/98624766/163495767-e013ea2b-952a-477a-87d1-d1059913cd6d.png)
+
+    3. In attacker machine run sqlmap command:
+       - sqlmap -u http://path.to.target.machine/wp-content/plugins/olimometer/thermometer.php?olimometer_id=1 --dbs --threads=5 --random-agent --no-cast
+
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 
-
+  - References: https://packetstormsecurity.com/files/139921/WordPress-Olimometer-2.56-SQL-Injection.html
+  - 
 ### 4. (Optional) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
