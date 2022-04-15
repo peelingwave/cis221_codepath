@@ -75,11 +75,8 @@ Reference: https://sumofpwn.nl/advisory/2016/persistent_cross_site_scripting_vul
     3. In attacker machine run sqlmap command:
        - sqlmap -u http://path.to.target.machine/wp-content/plugins/olimometer/thermometer.php?olimometer_id=1 --dbs --threads=5 --random-agent --no-cast
 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-
   - References: https://packetstormsecurity.com/files/139921/WordPress-Olimometer-2.56-SQL-Injection.html
-  - 
+  
 ### 4. (Optional) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
