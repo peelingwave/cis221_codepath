@@ -36,7 +36,7 @@ Reference: https://sumofpwn.nl/advisory/2016/persistent_cross_site_scripting_vul
   - [ ] Steps to recreate: 
     1. Confirm WordPress target host is vulnerable. Reflex Gallery plugin version older than 3.1.4 must be installed and activated.
     2. Upload image into Reflex gallery plugin.
-    3. In Reflex gallery settings retrieve the short code and insert it into post. 
+    3. In Reflex gallery settings retrieve the short code and insert it into post. In my case the short code was: [ReflexGallery id='1']
     ![WP_reflex_gallery_pages](https://user-images.githubusercontent.com/98624766/163492792-0498b52d-a217-4414-9fbb-126535e69990.png)
 
     4. Run metasploit from attacker machine using the following commands:
@@ -68,7 +68,7 @@ Reference: https://sumofpwn.nl/advisory/2016/persistent_cross_site_scripting_vul
   - [ ] Steps to recreate: 
     1. Ensure WP 4.2 and install Olimometer 2.56 or older onto target machine and activate the plugin. [olimometer.2.56.zip](https://github.com/peelingwave/cis221_codepath/files/8492878/olimometer.2.56.zip)
 
-    2. In Olimometer plugin settings, retrieve short code and insert into post. 
+    2. In Olimometer plugin settings, retrieve short code and insert into post. In my case the short code was: [olimometer id=3]
     ![olimometer_shortcode](https://user-images.githubusercontent.com/98624766/163495767-e013ea2b-952a-477a-87d1-d1059913cd6d.png)
 
     3. In attacker machine run sqlmap command:
