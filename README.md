@@ -57,7 +57,7 @@ Description: The developer created a different response for a username that exis
 
 Vulnerability #2:  IDOR
 
-The developer left anyone the ability to manipulate  a URL parameter, in this case id=x, in order to directly access a user that is only supposed to be accessed by a logged in authorized user/admin. The id=10 and id=11 references 2 users that are not listed on the public facing page and should not be accessible to the public. 
+The developer left anyone the ability to manipulate  a URL parameter, in this case id=x, in order to directly access a user that is only supposed to be accessed by a logged in authorized user/admin. The id=10 and id=11 references 2 users that are not listed on the public facing page and should not be accessible to the public. Access control in the session management was not implemented. 
 
 ![IDOR_vuln-red](https://user-images.githubusercontent.com/98624766/163856745-d51886ef-2ed1-4e7c-8c20-2c3ce23aa086.gif)
 
