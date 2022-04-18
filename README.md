@@ -33,7 +33,9 @@ Description:
 
 Vulnerability #1: XSS
 
-Description: 
+Description: IDOR
+
+Description: I'm able to post a script inside the Red Contact Form that executes a pop up. While the popup is harmless, its a proof of concept that can be leveraged to do malicious activity. The specific script I used was <script>alert('Greetings from Marvin@c0d3p4th!');</script> 
 
 ![SQLi_green_contact_form](https://user-images.githubusercontent.com/98624766/163739016-5ff69656-0cce-48a9-87be-b4147b2adc8f.gif)
 ![SQLi_green_contact_form](https://user-images.githubusercontent.com/98624766/163739032-ee499643-6f75-4464-9812-396b93429ab4.png)
@@ -55,9 +57,7 @@ Description: The developer created a different response for a username that exis
 ![Username_enumeration_vuln_red](https://user-images.githubusercontent.com/98624766/163844373-8d2b64f3-eab2-43af-b0dd-f2d23f500a6c.gif)
 <img src="red-vuln1.gif">
 
-Vulnerability #2: IDOR
-
-Description: I'm able to post a script inside the Red Contact Form that executes a pop up. While the popup is harmless, its a proof of concept that can be leveraged to do malicious activity. The specific script I used was <script>alert('Greetings from Marvin@c0d3p4th!');</script>  
+Vulnerability #2:  
 
 <img src="red-vuln2.gif">
 
