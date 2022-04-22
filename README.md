@@ -24,11 +24,12 @@ Description: The developer of the blue site does not protect against session hij
 ![Session_hijacking2_blue](https://user-images.githubusercontent.com/98624766/164585856-fe0d574d-6828-4013-99d4-42abac760ab6.gif)
 
 
-Vulnerability #2: Session fixation
+Vulnerability #2: SQLI
 
-Description:
+Description: I'm able to show an error in a database request by placing a test ' at the end of the url. This shows that the one can access contents of the sites database.
 
-<img src="blue-vuln2.gif">
+![sqli-search_salespersonblue](https://user-images.githubusercontent.com/98624766/164587925-9ca3ee0a-da4e-4ec5-b700-9c88dc8585b3.gif)
+
 
 ## Green
 
