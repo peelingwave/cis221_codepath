@@ -38,22 +38,18 @@ Description: I'm able to post a script inside the Red Contact Form that executes
 ![SQLi_green_contact_form](https://user-images.githubusercontent.com/98624766/163739016-5ff69656-0cce-48a9-87be-b4147b2adc8f.gif)
 ![SQLi_green_contact_form](https://user-images.githubusercontent.com/98624766/163739032-ee499643-6f75-4464-9812-396b93429ab4.png)
 
-<img src="green-vuln1.gif">
 
-Vulnerability #2: 
+Vulnerability #2: Username enumeration
 
-Description: 
+Description: The developer created a different response for an incorrect password for a valid username that exists in their database vs one that does not exists, ie. valid usernames with incorrect password replies with a bold **Log in was unsuccessful.** and invalid usernames are not bold. This difference will allow bad actors to exploit the vuln, for ex. to be able to brute force username/passwords more efficiently. The developer should have created an identical response for both valid and invalid username input. 
 
-<img src="green-vuln2.gif">
+![Username_enumeration_vuln_green](https://user-images.githubusercontent.com/98624766/164575885-8a8124fe-5987-4e94-be32-e1363998a0eb.gif)
+
 
 ## Red
 
-Vulnerability #1:Username enumeration
+Vulnerability #1:
 
-Description: The developer created a different response for a username that exists in their database vs one that does not exists. This difference will allow bad actors to exploit the vuln, for ex. to be able to brute force username/passwords more efficiently. The developer should have created an identical response for both valid and invalid username input. 
-
-![Username_enumeration_vuln_red](https://user-images.githubusercontent.com/98624766/163844373-8d2b64f3-eab2-43af-b0dd-f2d23f500a6c.gif)
-<img src="red-vuln1.gif">
 
 Vulnerability #2:  IDOR
 
