@@ -17,13 +17,14 @@ Each color is vulnerable to only 2 of the 6 possible exploits. First discover wh
 
 ## Blue
 
-Vulnerability #1: __________________
+Vulnerability #1: Session Hijacking
 
-Description:
+Description: The developer of the blue site does not protect against session hijacking. If I'm able to get access to a user's session id who is logged in, I'm able to use their session id with the same access.
 
-<img src="blue-vuln1.gif">
+![Session_hijacking2_blue](https://user-images.githubusercontent.com/98624766/164585856-fe0d574d-6828-4013-99d4-42abac760ab6.gif)
 
-Vulnerability #2: __________________
+
+Vulnerability #2: Session fixation
 
 Description:
 
@@ -60,4 +61,4 @@ The developer left anyone the ability to manipulate  a URL parameter, in this ca
 ## Notes
 
 Describe any challenges encountered while doing the work
-
+Someone had changed the username from 
