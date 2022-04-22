@@ -61,5 +61,4 @@ The developer left anyone the ability to manipulate  a URL parameter, in this ca
 
 ## Notes
 
-Describe any challenges encountered while doing the work
-Someone had changed the username from 
+The Username Enumeration hint on codepath said to use "jmonroe99" as a test, but someone had edited this username, so it wasn't valid during the session I was in. This can throw people off if it gets changed by someone in the class. 
