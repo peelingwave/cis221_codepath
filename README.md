@@ -54,6 +54,8 @@ Snort is a also an Intrusion Prevention System (IPS). Security researchers use t
 #### Wannacry 
 
 **Summary:** How did you find it? Which honeypot captured it? What does each malware do?
+I found it in the payloads section in the MHN-Admin GUI. I copied the MD5 hash and searched on Virustotal.com. There the community had writeups explaining the severity of the attack as well as a description. 
+
 
 MD5 Hash: *Run `md5sum` on the file and record the hash here.*
 C27ecb1de9ca748605af567237eeed4f 
