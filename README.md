@@ -19,9 +19,10 @@
 
 **Summary:** Briefly in your own words, what does dionaea do?
 Dionaea is a decoy server that is used to attract would-be malicious actors into trying to exploit its vulnerable services and capture these findings.
-1. Install Dionaea by coping the wget script in mhn-admin gui.
-2. Paste into honeypot-1 server
-<img src="dionaea-honeypot.gif">
+1. Create honeypot VM in GCP
+2. Install Dionaea by coping the wget script in mhn-admin gui.
+3. Paste into honeypot-1 server
+![dionaea](https://user-images.githubusercontent.com/98624766/166306537-b3ff4787-05d2-4159-980d-475d07ff1c1e.gif)
 
 ### Database Backup (Required) 
 
