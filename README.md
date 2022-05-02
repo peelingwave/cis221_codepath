@@ -51,17 +51,18 @@ Snort is a also an Intrusion Prevention System (IPS). Security researchers use t
 
 ### Malware Capture and Identification (Optional)
 
-#### X Malware
+#### Wannacry 
 
 **Summary:** How did you find it? Which honeypot captured it? What does each malware do?
 
 MD5 Hash: *Run `md5sum` on the file and record the hash here.*
-
+C27ecb1de9ca748605af567237eeed4f 
 SHA1 Hash: *Run `sha1sum` on the file and record the hash here.*
-
+f3b0fed4b1ba6da067663fed061d1ba03c883ab4
 <img src="x-malware.gif">
 
-Screenshot of GCP VMs (
+Screenshot of GCP VMs and MHN-Admin
+![GCP_screenshot](https://user-images.githubusercontent.com/98624766/166342877-57bd588c-3ad4-42ab-b481-c5691f80d4f1.png)
 
 ## Notes
 
