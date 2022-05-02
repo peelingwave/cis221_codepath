@@ -61,10 +61,20 @@ SHA1 Hash: *Run `sha1sum` on the file and record the hash here.*
 
 <img src="x-malware.gif">
 
+Screenshot of GCP VMs (
+
 ## Notes
 
 Describe any challenges encountered while doing the assignment.
 
 Sometimes mhn gui would not load. 
 mhn gui map never loaded.
-GCP VMs would not start from suspend. Error mentioned not enough resources. Had to delete VMs and start a new cluster. 
+GCP VMs would not start from suspend, an error mentioned not enough resources. I had to delete VMs and create new mhn admin and honeypots. 
+Suricata honeypot would not install using deploy script. 
+I ran into errors trying to deploy Suricata from the MHN GUI. I found this workaround to deploy it. https://github.com/pwnlandia/mhn/issues/798
+1. Go to your MHN GUI > Deploy > Select Script > select Ubuntu - Suricata.
+2. Cut the script below and paste into a text editor.
+3. You need to add  "sed -i 's/-2.0/-5.0.0/g' Makefile.am" between lines 72 and 73. 
+4. Paste the script back into the MHN GUI Deploy and press "update"
+5. Copy the WGET and run in your MHN-admin console. 
+Glastopf honeypot would not install. I was able to drill down and update the code but I came against an error that I could not overcome complaining about needing python a current version even though I was at the current version.
