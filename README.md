@@ -71,6 +71,7 @@ Describe any challenges encountered while doing the assignment.
 Sometimes mhn gui would not load. 
 mhn gui map never loaded.
 GCP VMs would not start from suspend, an error mentioned not enough resources. I had to delete VMs and create new mhn admin and honeypots. 
+
 Suricata honeypot would not install using deploy script. 
 I ran into errors trying to deploy Suricata from the MHN GUI. I found this workaround to deploy it. https://github.com/pwnlandia/mhn/issues/798
 1. Go to your MHN GUI > Deploy > Select Script > select Ubuntu - Suricata.
