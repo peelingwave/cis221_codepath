@@ -9,6 +9,7 @@
 ### MHN-Admin Deployment (Required)
 
 **Summary:** How did you deploy it? Did you use GCP, AWS, Azure, Vagrant, VirtualBox, etc.?
+The following are the steps I used to deploy MHN-Admin in GCP:
 1. Start new project in GCP.
 2. Create wide-open firewalls rules to allow incoming traffic.
 3. Create MHN-Admin VM.
