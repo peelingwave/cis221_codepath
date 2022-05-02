@@ -47,3 +47,7 @@ SHA1 Hash: *Run `sha1sum` on the file and record the hash here.*
 ## Notes
 
 Describe any challenges encountered while doing the assignment.
+
+Sometimes mhn gui would not load. 
+mhn gui map never loaded.
+GCP VMs would not start from suspend. Error mentioned not enough resources. Had to delete VMs and start a new cluster. 
