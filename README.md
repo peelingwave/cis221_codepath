@@ -9,13 +9,18 @@
 ### MHN-Admin Deployment (Required)
 
 **Summary:** How did you deploy it? Did you use GCP, AWS, Azure, Vagrant, VirtualBox, etc.?
-
-<img src="mhn-admin.gif">
+1. Start new project in GCP.
+2. Create wide-open firewalls rules to allow incoming traffic.
+3. Create MHN-Admin VM.
+4. Install MHN Admin application with GUI accessible via a web browser using the MHN-Admin ip address.
+![mhn-admin deployment-gui](https://user-images.githubusercontent.com/98624766/166303962-8e4fa917-d101-4dab-8f5c-6d4fbccec66f.gif)
 
 ### Dionaea Honeypot Deployment (Required)
 
 **Summary:** Briefly in your own words, what does dionaea do?
-
+Dionaea is a decoy server that is used to attract would-be malicious actors into trying to exploit its vulnerable services and capture these findings.
+1. Install Dionaea by coping the wget script in mhn-admin gui.
+2. Paste into honeypot-1 server
 <img src="dionaea-honeypot.gif">
 
 ### Database Backup (Required) 
