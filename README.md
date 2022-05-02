@@ -28,7 +28,7 @@ Dionaea is a decoy server that is used to attract would-be malicious actors into
 
 **Summary:** What is the RDBMS that MHN-Admin uses? What information does the exported JSON file record?
 
-*Be sure to upload session.json directly to this GitHub repo/branch in order to get full credit.*
+MHN-Admin uses mongoDb as its RDBMS. The JSON file records information from attacks on my honeypot servers, ie timestamps, source ip, source port, destination port, which honeypot it attacked, and the protocol type of the attack. 
 
 ### Deploying Additional Honeypot(s) (Optional)
 
