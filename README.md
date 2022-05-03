@@ -72,6 +72,8 @@ SHA1 Hash: *Run `sha1sum` on the file and record the hash here.*
 
 f3b0fed4b1ba6da067663fed061d1ba03c883ab4
 
+https://www.joesandbox.com/analysis/573201/0/html
+
 <img src="x-malware.gif">
 
 Screenshot of GCP VMs and MHN-Admin
