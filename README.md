@@ -48,6 +48,12 @@ Suricata is described as a Intrusion Detection System (IDS), Intrusion Preventio
 Snort is a also an Intrusion Prevention System (IPS). Security researchers use this tool to prevent network breaches from malicious actors. 
 ![mhn gui snort](https://user-images.githubusercontent.com/98624766/166341875-8f1a54ba-41e0-4001-af0b-c750a236ee58.gif)
 
+#### Honeypot Cowrie
+
+Cowrie is a Telnet honeypot that logs bruteforce attacks and the shell interaction. It can emulate either a Unix system or as an ssh proxy. 
+![cowrie graphs](https://user-images.githubusercontent.com/98624766/166400313-628e9ed1-bceb-4cae-86d0-acb8113785ae.png)
+
+
 
 ### Malware Capture and Identification (Optional)
 
