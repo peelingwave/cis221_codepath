@@ -57,8 +57,14 @@ Snort is a also an Intrusion Prevention System (IPS). Security researchers use t
 I found it in the payloads section in the MHN-Admin GUI. I copied the MD5 hash and searched on Virustotal.com. There the community had writeups explaining the severity of the attack as well as a description. 
 
 
-MD5 Hash: *Run `md5sum` on the file and record the hash here.* C27ecb1de9ca748605af567237eeed4f 
-SHA1 Hash: *Run `sha1sum` on the file and record the hash here.* f3b0fed4b1ba6da067663fed061d1ba03c883ab4
+MD5 Hash: *Run `md5sum` on the file and record the hash here.* 
+
+C27ecb1de9ca748605af567237eeed4f 
+
+SHA1 Hash: *Run `sha1sum` on the file and record the hash here.* 
+
+f3b0fed4b1ba6da067663fed061d1ba03c883ab4
+
 <img src="x-malware.gif">
 
 Screenshot of GCP VMs and MHN-Admin
