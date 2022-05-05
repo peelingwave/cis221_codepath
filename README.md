@@ -53,6 +53,8 @@ Snort is a also an Intrusion Prevention System (IPS). Security researchers use t
 #### Honeypot Cowrie
 
 Cowrie is a Telnet honeypot that logs bruteforce attacks and the shell interaction. It can emulate either a Unix system or as an ssh proxy. In MHN GUI I was able to see the attacks, including the attackers ip address and the credentials they attempted to use (username/password) to access priveleged accounts. 
+![cowrie](https://user-images.githubusercontent.com/98624766/166850897-1427127f-36fe-4379-96e2-92f7942102e6.gif)
+
 ![cowrie graphs](https://user-images.githubusercontent.com/98624766/166400313-628e9ed1-bceb-4cae-86d0-acb8113785ae.png)
 
 
