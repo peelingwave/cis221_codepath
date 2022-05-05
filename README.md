@@ -2,7 +2,7 @@
 
 # Honeypot Assignment
 
-**Time spent:** **X** hours spent in total
+**Time spent:** **20** hours spent in total
 
 **Objective:** Create a honeynet using MHN-Admin. Present your findings as if you were requested to give a brief report of the current state of Internet security. Assume that your audience is a current employer who is questioning why the company should allocate anymore resources to the IT security team.
 
@@ -11,9 +11,9 @@
 **Summary:** How did you deploy it? Did you use GCP, AWS, Azure, Vagrant, VirtualBox, etc.?
 
 The following are summary steps I used to deploy MHN-Admin VM in GCP (I used the installation scripts provided by codepath as seen in gif below):
-1. Start new project in GCP.
-2. Create wide-open firewalls rules to allow incoming traffic. 
-3. Create MHN-Admin VM.
+1. Start a new project in Google Cloud Project (GCP).
+2. Create firewalls rules to allow incoming traffic on ports. 
+3. Create MHN-Admin VM via GCP cloudshell.
 4. Install MHN Admin application with GUI accessible via a web browser using the MHN-Admin ip address.
 ![mhn-admin deployment-gui](https://user-images.githubusercontent.com/98624766/166303962-8e4fa917-d101-4dab-8f5c-6d4fbccec66f.gif)
 
@@ -21,19 +21,19 @@ The following are summary steps I used to deploy MHN-Admin VM in GCP (I used the
 
 **Summary:** Briefly in your own words, what does dionaea do?
 
-Dionaea is a decoy server that is used to attract would-be malicious actors into trying to exploit its vulnerable services and capture these findings.
+Dionaea is a decoy server that is used to attract would-be mthreat actors into trying to exploit its vulnerable services and capture these findings.The firewall rules I created in GCP allow it to seem like an easy target from threat actors. 
 
-The following are summary steps to deploy the honeypot VM:
-1. Create honeypot VM in GCP
-2. Install Dionaea by coping the wget script in mhn-admin gui.
-3. Paste into honeypot-1 server
+The following are summary steps to deploy the honeypot VM (I used the installation scripts provided by codepath as seen in gif below):
+1. Create honeypot VM in GCP cloudshell (not in the MHN-admin console).
+2. Install Dionaea by copying the wget script in the mhn-admin gui under Deploy > Dionaea.
+3. SSH into honeypot-1 console and paste the wget install script.
 ![dionaea](https://user-images.githubusercontent.com/98624766/166306537-b3ff4787-05d2-4159-980d-475d07ff1c1e.gif)
 
 ### Database Backup (Required) 
 
 **Summary:** What is the RDBMS that MHN-Admin uses? What information does the exported JSON file record?
 
-MHN-Admin uses mongoDb as its RDBMS. The JSON file records information from attacks on my honeypot servers, ie timestamps, source ip, source port, destination port, which honeypot it attacked, and the protocol type of the attack. 
+MHN-Admin uses mongoDb as its RDBMS. The JSON file records information from attacks on my honeypot servers, ie timestamps, source ip, source port, destination port, which honeypot it attacked, and the protocol of the attack. 
 
 ### Deploying Additional Honeypot(s) (Optional)
 
@@ -54,15 +54,13 @@ Cowrie is a Telnet honeypot that logs bruteforce attacks and the shell interacti
 ![cowrie graphs](https://user-images.githubusercontent.com/98624766/166400313-628e9ed1-bceb-4cae-86d0-acb8113785ae.png)
 
 
-
 ### Malware Capture and Identification (Optional)
 
-#### Wannacry 
+1.#### Wannacry
 
 **Summary:** How did you find it? Which honeypot captured it? What does each malware do?
 
-I found it in the payloads section in the MHN-Admin GUI. I copied the MD5 hash and searched on Virustotal.com. There the community had writeups explaining the severity of the attack as well as a description. Wannacry is a type of ransomeware that attacks and exploits Windows and encrypts data on the computer in return for bitcoin. 
-
+I found them in the payloads section in the MHN-Admin GUI. I copied the MD5 hashes and searched on Virustotal.com. There the community had writeups explaining the severity of the attack as well as a description. Wannacry is a type of ransomeware that attacks and exploits Windows and encrypts data on the computer in return for bitcoin. 
 
 MD5 Hash: *Run `md5sum` on the file and record the hash here.* 
 
@@ -75,6 +73,7 @@ f3b0fed4b1ba6da067663fed061d1ba03c883ab4
 https://www.joesandbox.com/analysis/573201/0/html
 
 <img src="x-malware.gif">
+
 
 Screenshot of GCP VMs and MHN-Admin
 ![GCP_screenshot](https://user-images.githubusercontent.com/98624766/166342877-57bd588c-3ad4-42ab-b481-c5691f80d4f1.png)
