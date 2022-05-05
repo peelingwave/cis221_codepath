@@ -28,7 +28,7 @@ Dionaea is a decoy server that is used to attract would-be mthreat actors into t
 The following are summary steps to deploy the honeypot VM (I used the installation scripts provided by codepath as seen in gif below):
 1. Create honeypot VM in GCP cloudshell (not in the MHN-admin console).
 2. Install Dionaea by copying the wget script in the mhn-admin gui under Deploy > Dionaea.
-3. SSH into honeypot-1 console and paste the wget install script.
+3. SSH into honeypot-1 console and paste the wget install script and run the command. 
 ![dionaea](https://user-images.githubusercontent.com/98624766/166306537-b3ff4787-05d2-4159-980d-475d07ff1c1e.gif)
 
 ### Database Backup (Required) 
@@ -43,7 +43,7 @@ MHN-Admin uses mongoDb as its RDBMS. The JSON file records information from atta
 
 **Summary:** What does this honeypot simulate and do for a security researcher?
 
-Suricata is described as a Intrusion Detection System (IDS), Intrusion Prevention System (IPS), and a Network System monitor (NSM). Security researchers and analysts use this tool to detect, identify, and prevent malicious breaches into a network. 
+Suricata is described as a Intrusion Detection System (IDS), Intrusion Prevention System (IPS), and a Network System monitor (NSM). Security researchers and analysts use this tool to detect, identify, and prevent malicious breaches into a network. Suricata was able to detect suspicious activity in my honeypot.
 ![mhn gui suricata](https://user-images.githubusercontent.com/98624766/166341451-468292f9-be69-4dc0-b3f4-687bcc1bc9d7.gif)
 
 #### Honeypot Snort
@@ -52,7 +52,7 @@ Snort is a also an Intrusion Prevention System (IPS). Security researchers use t
 
 #### Honeypot Cowrie
 
-Cowrie is a Telnet honeypot that logs bruteforce attacks and the shell interaction. It can emulate either a Unix system or as an ssh proxy. 
+Cowrie is a Telnet honeypot that logs bruteforce attacks and the shell interaction. It can emulate either a Unix system or as an ssh proxy. In MHN GUI I was able to see the attacks, including the attackers ip address and the credentials they attempted to use (username/password) to access priveleged accounts. 
 ![cowrie graphs](https://user-images.githubusercontent.com/98624766/166400313-628e9ed1-bceb-4cae-86d0-acb8113785ae.png)
 
 
@@ -79,6 +79,12 @@ https://www.joesandbox.com/analysis/573201/0/html
 
 Screenshot of GCP VMs and MHN-Admin
 ![GCP_screenshot](https://user-images.githubusercontent.com/98624766/166342877-57bd588c-3ad4-42ab-b481-c5691f80d4f1.png)
+Screenshot of sensors in MHN GUI
+![sensors](https://user-images.githubusercontent.com/98624766/166850684-8e2152e2-af76-41a8-83b5-03951e547bee.png)
+
+Screenshot of Cowrie graphs in MHN-GUI
+![cowrie_more](https://user-images.githubusercontent.com/98624766/166850712-7579ccf1-1a35-4665-8d26-4f0c846ec001.png)
+
 
 ## Notes
 
