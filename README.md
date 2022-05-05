@@ -15,6 +15,8 @@ The following are summary steps I used to deploy MHN-Admin VM in GCP (I used the
 2. Create firewalls rules to allow incoming traffic on ports. 
 3. Create MHN-Admin VM via GCP cloudshell.
 4. Install MHN Admin application with GUI accessible via a web browser using the MHN-Admin ip address.
+
+Note: I used the tool Peek to record the gif, for some reason my pointer did not show up in the recordings.
 ![mhn-admin deployment-gui](https://user-images.githubusercontent.com/98624766/166303962-8e4fa917-d101-4dab-8f5c-6d4fbccec66f.gif)
 
 ### Dionaea Honeypot Deployment (Required)
